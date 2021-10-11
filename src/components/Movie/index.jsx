@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import './style.css';
 
-import Actor from '../Actor';
+import Actor from './../Actor';
 
 
 const Movie = ({title,poster,year,rating,director,genre,name,as})=>{

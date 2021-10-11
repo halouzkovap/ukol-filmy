@@ -1,0 +1,22 @@
+
+
+.img{
+    width: 40px;
+    height: 60px;
+}
+
+.movieContainer { 
+    overflow:auto; 
+    width: 150px; 
+font-size: 6px;
+  } 
+  
+  .poster, .description { 
+    width: 40%; 
+    margin:5px; 
+    padding: 1em; 
+    background: white; 
+  } 
+  
+  .poster  { float:left;  }
+  .description { float:right; } 

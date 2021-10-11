@@ -4,10 +4,10 @@ import './style.css';
 
 import Movie from '../Movie';
 
-const MovieList=({movie})=>{
+const MovieList=(props)=>{
     return(
         <div className="movieListContainer"> 
-            <Movie title={movie.title} poster={movie.poster} year={movie.year} rating={movie.rating} director={movie.director} genre={movie.genre} name={movie.cast.name} as={movie.cast.as}/>
+         {props.films.map(film=> <Movie title={film.title} poster={film.poster} year={film.year} rating={film.rating} director={film.director} genre={film.genre} actors={film.cast} />)}
         </div>
     )
 }

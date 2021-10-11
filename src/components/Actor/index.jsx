@@ -2,11 +2,10 @@ import React from 'react';
 import { render } from 'react-dom';
 import './style.css';
 
-const Actor=({name,as})=>{
+const Actor=(props)=>{
     return(
         <>
-            <p>{name}</p>
-            <p>{as}</p>
+            <p>{props.name} as {props.as}</p>
         </>
     )
 }

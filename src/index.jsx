@@ -12,7 +12,7 @@ const App = () => (
   <>
   <Header/>
   <div className="content">
-    {movies.map(film=><MovieList movie={film}/>)}
+      <MovieList films={movies}/>
     </div>
   </>
 );

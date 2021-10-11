@@ -1,22 +1,47 @@
 
 
-.img{
-    width: 40px;
-    height: 60px;
+
+
+.grid-container { 
+    display: grid;
+    padding: 5px;
+    grid-gap: 7px;
+  } 
+  
+  .grid-item {
+   
+    font-size: 15px;
+  }
+
+  .castItem{
+    padding-top: 5px;
+    grid-column: 2;
+    grid-row: 3/ span 2;
+   
+  }
+
+  .posterItem{
+    grid-column: 1 ;
+    grid-row: 1 /span 4;
+
+  }
+  
+  .descriptionItem { 
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  } 
+  
+  .img{
+    width: 180px;
+    height:240px;
 }
 
-.movieContainer { 
-    overflow:auto; 
-    width: 150px; 
-font-size: 6px;
-  } 
-  
-  .poster, .description { 
-    width: 40%; 
-    margin:5px; 
-    padding: 1em; 
-    background: white; 
-  } 
-  
-  .poster  { float:left;  }
-  .description { float:right; } 
+  p{
+      margin: 0px;
+  }
+
+  h3{
+      margin-top: 0px;
+      margin-bottom: 0.5px;
+      color: red;
+  }

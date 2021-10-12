@@ -6,7 +6,7 @@
   grid-template-rows: 1fr; 
   gap: 0px 0px;   
   border: 1px solid #ccc;
-  
+  background-color: white;
   grid-template-areas: "overlap";
   } 
   
@@ -20,6 +20,7 @@
    width: 100%;
    grid-area: overlap;
   
+  
   }
   
   .rating{
@@ -28,8 +29,8 @@
     grid-area: overlap;
     background-color: orange;
     height: 20px;
-    width: 80px;
- 
+    width: 60px;
+   
 color: white;
 font-size: 12px;
 font-weight: bold;
@@ -39,6 +40,7 @@ font-weight: bold;
     margin-top: 10px;
     column-span: 2;
   font-size: 13px;
+
   } 
   
   .img{

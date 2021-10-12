@@ -1,41 +1,28 @@
 
 
-
-
 .grid-container { 
-    display: grid;
-    padding: 10px;
-    grid-gap: 7px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px;   
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 10px;
   } 
   
 .grid-container:hover{
   border: 1px solid #777;
 }
 
-  .grid-item {
-    font-size: 15px;
-    
-  }
 
-  .castItem{
-    padding-top: 5px;
-    grid-column: 2;
-    grid-row: 3/ span 2;
-   
-  }
-
-  .posterItem{
-    grid-column: 1 ;
-    grid-row: 1 /span 3;
-    padding:0px;
+  .poster{
+   column-span: 1;
+   width: 100%;
   }
   
-  .descriptionItem { 
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    padding:0px;
+  .description { 
+    column-span: 2;
+  font-size: 13px;
   } 
   
   .img{
@@ -53,8 +40,7 @@
       color: red;
   }
 
-  h4{
+  h5{
       color: red;
       margin: 0px;
-    
   }

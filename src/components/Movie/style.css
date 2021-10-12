@@ -8,6 +8,7 @@
   border: 1px solid #ccc;
   border-radius: 25px;
   padding: 10px;
+  grid-template-areas: "overlap";
   } 
   
 .grid-container:hover{
@@ -18,8 +19,19 @@
   .poster{
    column-span: 1;
    width: 100%;
+   grid-area: overlap;
+  
   }
   
+  .rating{
+    grid-area: overlap;
+    background-color: yellow;
+    height: 20px;
+    width: 60px;
+    align-self: flex-start;
+    justify-self: unset;
+    }
+
   .description { 
     column-span: 2;
   font-size: 13px;
@@ -29,6 +41,8 @@
     width: 180px;
     height:240px;
 }
+
+
 
   p{
       margin: 0px;

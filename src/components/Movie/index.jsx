@@ -11,7 +11,7 @@ const Movie = (props)=>{
         <div className=" poster">
         <img src={props.poster} alt="poster" className="img" />
         </div>
-        <div className="rating"><p><b>{props.rating}/10</b></p></div>
+        <div className="rating"><p>{props.rating}/10</p></div>
         <div className="description">
         <h3>{props.title}</h3>
         <p><b>Rok vydání</b>: {props.year}</p>

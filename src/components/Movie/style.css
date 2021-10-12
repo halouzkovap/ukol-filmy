@@ -6,8 +6,7 @@
   grid-template-rows: 1fr; 
   gap: 0px 0px;   
   border: 1px solid #ccc;
-  border-radius: 25px;
-  padding: 10px;
+  
   grid-template-areas: "overlap";
   } 
   
@@ -24,16 +23,20 @@
   }
   
   .rating{
+    
+   text-align: center;
     grid-area: overlap;
-    background-color: yellow;
+    background-color: orange;
     height: 20px;
-    width: 60px;
-    align-self: flex-start;
-    justify-self: unset;
-   
+    width: 80px;
+ 
+color: white;
+font-size: 12px;
+font-weight: bold;
     }
 
   .description { 
+    margin-top: 10px;
     column-span: 2;
   font-size: 13px;
   } 
@@ -41,6 +44,7 @@
   .img{
     width: 180px;
     height:240px;
+    margin: 10px;
 }
 
 

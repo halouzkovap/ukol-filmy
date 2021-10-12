@@ -4,13 +4,19 @@
 
 .grid-container { 
     display: grid;
-    padding: 5px;
+    padding: 10px;
     grid-gap: 7px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
   } 
   
+.grid-container:hover{
+  border: 1px solid #777;
+}
+
   .grid-item {
-   
     font-size: 15px;
+    
   }
 
   .castItem{
@@ -22,13 +28,14 @@
 
   .posterItem{
     grid-column: 1 ;
-    grid-row: 1 /span 4;
-
+    grid-row: 1 /span 3;
+    padding:0px;
   }
   
   .descriptionItem { 
     grid-column: 2;
     grid-row: 1 / span 2;
+    padding:0px;
   } 
   
   .img{
@@ -44,4 +51,10 @@
       margin-top: 0px;
       margin-bottom: 0.5px;
       color: red;
+  }
+
+  h4{
+      color: red;
+      margin: 0px;
+    
   }

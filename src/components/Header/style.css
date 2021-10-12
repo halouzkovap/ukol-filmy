@@ -9,3 +9,7 @@
     text-align: center;
   }
   
+  .headerContainer{
+    background-color: rgb(199, 195, 195);
+    border-radius: 25px;
+  }

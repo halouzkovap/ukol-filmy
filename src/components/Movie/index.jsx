@@ -13,15 +13,16 @@ const Movie = (props)=>{
         </div>
         <div className="grid-item descriptionItem">
         <h3>{props.title}</h3>
-        <p>Rok vydání: {props.year}</p>
-        <p>Žánr: {props.genre}</p>
-        <p>Režie: {props.director}</p>
-        <p>Rating {props.rating}/10</p>
-      <div className="grid-item castItem">
+        <p><b>Rok vydání</b>: {props.year}</p>
+        <p><b>Žánr</b>: {props.genre}</p>
+        <p><b>Režie</b>: {props.director}</p>
+        <p><b>Rating</b>:{props.rating}/10</p>
+        </div>
+        <div className="grid-item castItem">
             <h4>V hlavních rolích:</h4>
             {props.actors.map(a=><Actor name={a.name} as={a.as}/>)}
             </div>
-        </div>
+        
         </div>
     )
 }

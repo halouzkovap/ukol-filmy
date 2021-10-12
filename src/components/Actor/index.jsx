@@ -5,7 +5,8 @@ import './style.css';
 const Actor=(props)=>{
     return(
         <>
-            <p>{props.name} as {props.as}</p>
+          <p> <b>{props.name}</b> </p>
+            <p className="asName">as {props.as}</p>
         </>
     )
 }

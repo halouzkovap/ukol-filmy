@@ -7,7 +7,7 @@ import Movie from '../Movie';
 const MovieList=(props)=>{
     return(
         <div className="movieListContainer"> 
-         {props.films.map(film=> <Movie title={film.title} poster={film.poster} year={film.year} rating={film.rating} director={film.director} genre={film.genre} actors={film.cast} />)}
+         {props.films.map(film=> <Movie key={film.id} title={film.title} poster={film.poster} year={film.year} rating={film.rating} director={film.director} genre={film.genre} actors={film.cast} />)}
         </div>
     )
 }

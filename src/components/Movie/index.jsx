@@ -20,7 +20,7 @@ const Movie = (props)=>{
        
         <br/>
         <h5>V hlavních rolích:</h5>
-         {props.actors.map(a=><Actor name={a.name} as={a.as}/>)}
+         {props.actors.map(a=><Actor key={a.id} name={a.name} as={a.as}/>)}
         </div>
         </div>
     )
